@@ -5,7 +5,8 @@ base o seu paradigma orientado á objeto onde temos nossa entidade mãe e as out
 
 <p align="center"><img src="src/img/fluxograma.png" /></p>
 
-# Decisões de projeto
+A implementação da classe abstrata foi realizado no arquivo [Petshos.java](https://github.com/Javiercuba/TesteDTI/blob/main/src/com/company/Petshop.java)
+# *Decisões de projeto*
 Na implementação da atividade foi pensado cada petshop como uma entidade.
 
 O codigo abaixo é um exemplo de uma das classes que inicializa o construtor da classe mãe com seus valores especificos.
@@ -17,17 +18,32 @@ O codigo abaixo é um exemplo de uma das classes que inicializa o construtor da 
     }
 }
    ```
+Foi pensado dessa maneira para poder deixar de forma mais asbtrata na hora de realizar as manipulações de calculo e comparação 
+do preço final de cada Petshop na função ``CalculaValorTotal``
+
+```java
+static void CalculaValorTotal(List<Petshop> petshops,int caes_grandes, int caes_pequenos){
+    for(Petshop petshop:petshops){
+        //Inserindo O valor total para cada classe
+        petshop.setPrecoTotal(caes_grandes,caes_pequenos);
+        }
+  //Organizando em função do preço e distancia
+  petshops.sort(Comparator.comparing(Petshop::getPrecoTotal).thenComparing(Petshop::getDistancia_km));
+}
+```
+
+
 
 # *Main.java*
 
-Nesse arquivo é feito os seguintes passos:
+Nesse arquivo além de ser onde é feito todas as entradas do input do console também é feito os seguintes passos:
 
 * Inicialização das intancias:
 
 ```java
-Petshop CaninoFeliz = new MeuCaninoFeliz(isFinal_de_semana(selected_date));
-Petshop VaiRex      = new VaiRex(isFinal_de_semana(selected_date));
-Petshop ChowChawgas = new ChowChawgas();
+  Petshop CaninoFeliz = new MeuCaninoFeliz(isFinal_de_semana(selected_date));
+  Petshop VaiRex      = new VaiRex(isFinal_de_semana(selected_date));
+  Petshop ChowChawgas = new ChowChawgas();
 ```
 
 * Utilização de duas funções auxiliares:
@@ -43,7 +59,7 @@ Petshop ChowChawgas = new ChowChawgas();
     ```  
 
 # Execução do Sistema
-Para realizar a execução do sistema
+Para realizar a execução do sistema é necessario ter o JDK e a JVM instalado na máquina, clonar o repositório e executar o arquivo [main.java](https://github.com/Javiercuba/TesteDTI/blob/main/src/com/company/Main.java)
 
  
 
