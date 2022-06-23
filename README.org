@@ -1,15 +1,7 @@
 #+title: Teste DIT eSTAGIO
 #+author: Javier Ernesto Lopez del real
 
-** Exercícios LE1, LE2 e LE3
+A atividade foi desenvolvida utilizando a linguagem *Java*, basicamente a esolha surgiu pela praticidade tendo como base o seu paradigma orientado a objeto onde temos nossa entidade mãe e as outras classes que herdaam os seus metodos.
 
-Lembrando que aqui é o inicio do repositório, porém todas as pastas dos exercicios tem esse campo para ler,
-para acessar cada exercicio é so clicar nos links abaixo, ou ir navegando pelas pastas acima:
-
-- LE1:
-
-***** 1. Exercicio [[https://github.com/Javiercuba/Estruturas_de_dados1/tree/master/LE1/Cilindro#cilindro][Cilindro]]
-***** 2. Exercicio [[https://github.com/Javiercuba/Estruturas_de_dados1/tree/master/LE1/Clientes#clientes][Clientes]]
-***** 3. Exercicio [[https://github.com/Javiercuba/Estruturas_de_dados1/tree/master/LE1/Data#data][Data]]
-***** 4. Exercicio [[https://github.com/Javiercuba/Estruturas_de_dados1/tree/master/LE1/Conjunto#conjunto][Conjunto]]
+>>>>>>> 1b339da5eeb9b578a9633f337b4d9583a4ba551f
 
