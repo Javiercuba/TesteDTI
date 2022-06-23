@@ -3,4 +3,6 @@
 
 ** Petshop
 
+A atividade foi desenvolvida utilizando a linguagem *Java*, basicamente a esolha surgiu pela praticidade tendo como base o seu paradigma orientado a objeto onde temos nossa entidade mãe e as outras classes que herdaam os seus metodos.
+
 
