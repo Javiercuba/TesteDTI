@@ -36,26 +36,19 @@ public class Main {
             petshop.setPrecoTotal(caes_grandes,caes_pequenos);
         }
 
-         petshops.sort(Comparator.comparing(Petshop::getPrecoTotal).thenComparing(Petshop::getDistancia_km));
+        petshops.sort(Comparator.comparing(Petshop::getPrecoTotal).thenComparing(Petshop::getDistancia_km));
 
-        for (Petshop petshop : petshops) {
-
-            System.out.println("Nome: "+petshop.getNome());
-            System.out.println("Valor total: "+petshop.getPrecoTotal());
-            System.out.println("Distancia: "+petshop.getDistancia_km());
-            System.out.println("----------------------------------");
-        }
         System.out.println("O melor Petshop é " + petshops.get(0).getNome() + ", com preço igual a R$"+ petshops.get(0).getPrecoTotal());
     }
 
     static boolean isFinal_de_semana(String data) {
-        boolean dia_semana;
+        boolean isdia_semana;
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d/M/yyyy");
         LocalDate date = LocalDate.parse(data, formatter);
         DayOfWeek dow = date.getDayOfWeek();
         String output = dow.getDisplayName(TextStyle.FULL, Locale.US);
 
-        dia_semana = output.equals("Saturday") || output.equals("Sunday");
-        return dia_semana;
+        isdia_semana = output.equals("Saturday") || output.equals("Sunday");
+        return isdia_semana;
     }
 }
