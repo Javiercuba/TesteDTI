@@ -37,7 +37,7 @@ public class Main {
         }
         petshops.sort(Comparator.comparing(Petshop::getPrecoTotal).thenComparing(Petshop::getDistancia_km));
 
-        System.out.println("O melor Petshop é " + petshops.get(0).getNome() + ", com preço igual a R$"+ petshops.get(0).getPrecoTotal());
+        System.out.println("O melhor Petshop é " + petshops.get(0).getNome() + ", com preço igual a R$"+ petshops.get(0).getPrecoTotal());
     }
 
     static boolean isFinal_de_semana(String data) {

@@ -61,5 +61,5 @@ Nesse arquivo além de ser onde é feito todas as entradas do input do console t
 # Execução do Sistema
 Para realizar a execução do sistema é necessario ter o JDK e a JVM instalado na máquina, clonar o repositório e executar o arquivo [main.java](https://github.com/Javiercuba/TesteDTI/blob/main/src/com/company/Main.java)
 
- 
-
+Um exemplo da execução do sistema:
+<p align="center"><img src="src/img/console.png" /></p>
